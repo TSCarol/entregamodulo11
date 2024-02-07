@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanFlex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./maincss.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>UrbanFlex</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <div id="carrinho-menu" class="container-flex">
+                            <div id="carrinho-icon" onclick="mostrarCarrinho()">
+                                <i class="fa-solid fa-cart-shopping" style="color: #ededed;"></i>
+                                <span id="carrinho-quantidade">0</span>
+                            </div>
+                       </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container container-flex">
+            <img class="store-front" src="./download (7).jpg" alt="Interior da loja">
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>
+                    Inaugurada em 2013, a UrbanFlex se destaca como referência no cenário nacional. Trabalhando com marcas renomadas como Nike, Adidas, Vans, Puma e Converse, oferecemos aos clientes uma seleção exclusiva de calçados que unem estilo e qualidade.
+
+Conhecida por sua presença marcante, a UrbanFlex já se expandiu para diferentes regiões do Brasil, tornando-se um ponto de encontro para os apaixonados por tênis. Celebramos a cultura sneaker e proporcionamos uma experiência única, onde moda e autenticidade se encontram.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="produtos">
+        <div class="container container-flex">
+            <h2> Produtos </h2>
+            <div class="container-flex lista-sapatos">
+                <li>
+                    <img src="./Imagens/cdfe2a4dbf.webp" alt="Modelo1">
+                    <h3>Tenis Vans</h3>
+                    <p> Tenis vans preto e branco.</p>
+                    <strong>R$ 200,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li class="itemcentral">
+                    <img src="./Imagens/tenis-vans-sk8-hi-reconstruct-azul-marinho-branco-641324c98f33a.jpg" alt="Modelo2">
+                    <h3>Tenis Vans</h3>
+                    <p> Tenis vans azul marinho.</p>
+                    <strong>R$ 300,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li class="itemcentral">
+                    <img src="./Imagens/tenis-vans-sk8-low-bordo-branco-97035.jpg" alt="Modelo3">
+                    <h3>Tenis Vans</h3>
+                    <p> Tenis vans bordo.</p>
+                    <strong>R$ 200,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/vans roxo.jpg" alt="Modelo4">
+                    <h3>Tenis Vans</h3>
+                    <p> Tenis vans roxoo.</p>
+                    <strong>R$ 300,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/2001074783_Ampliada.webp" alt="Modelo1">
+                    <h3>Tenis Puma</h3>
+                    <p> Tenis Puma branco.</p>
+                    <strong>R$ 350,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li class="itemcentral">
+                    <img src="./Imagens/puma-cali-preto-20200813164211.webp" alt="Modelo2">
+                    <h3>Tenis Puma</h3>
+                    <p> Tenis Puma branco e preto.</p>
+                    <strong>R$ 400,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li class="itemcentral">
+                    <img src="./Imagens/supersalebrasil-202211013673210d.png" alt="Modelo3">
+                    <h3>Tenis Puma</h3>
+                    <p> Tenis Puma azul escuro. </p>
+                    <strong>R$ 350,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/Tenis-Casual-Puma-Carina-Street-Branco-Feminino.webp" alt="Modelo4">
+                    <h3>Tenis Puma</h3>
+                    <p> Tenis Puma branco.</p>
+                    <strong>R$ 300,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/Tenis-Cano-Alto-Converse-All-Star-Chuck-Taylor-Rosa-Feminino.webp" alt="Modelo1">
+                    <h3>Tenis Converse</h3>
+                    <p> Tenis Converse bege claro cano alto.</p>
+                    <strong>R$ 400,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li class="itemcentral">
+                    <img src="./Imagens/Tenis-Converse-All-Star-Chuck-Taylor-Monochrome-Canvas-Preto.webp" alt="Modelo2">
+                    <h3>Tenis Converse</h3>
+                    <p> Tenis Converse preto cano alto.</p>
+                    <strong>R$ 400,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li class="itemcentral">
+                    <img src="./Imagens/Tenis-Converse-All-Star-Chuck-Taylor-Seasonal-Colors-Amarelo.webp" alt="Modelo3">
+                    <h3>Tenis Converse</h3>
+                    <p> Tenis Converse amarelo cano alto. </p>
+                    <strong>R$ 350,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./Imagens/tenis-converse-chuck-taylor-all-star-verde-escuro-84452.jpg" alt="Modelo4">
+                    <h3>Tenis Converse</h3>
+                    <p> Tenis Converse verde escuro.</p>
+                    <strong>R$ 300,00</strong>
+                    <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+                </li>                
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <h3>Para receber novidades</h3>
+            <hr>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea type="text" id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2023 &copy; RetroRebellion- Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./mainjavascript.js"></script>
+</body>
+</html>

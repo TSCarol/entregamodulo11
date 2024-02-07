@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #e8e5e5f8;
+    text-align: center;
+}
+
+
+header {
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+header, footer {
+    background-color: #000;
+    padding-top: 16px;
+    color: #e8e5e5f8;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #e8e5e5f8;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 16px 0;
+    display: inline;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #e8e5e5f8;
+    text-decoration: none;
+}
+
+.container-flex {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#carrinho-menu {
+    display: flex;
+    align-items: center;
+}
+
+#carrinho-icon {
+    margin-right: 16px;
+}
+.container-flex {
+    display: flex;
+}
+
+#about {
+    background-color: rgb(63, 34, 6);
+    color:#e8e5e5f8;
+    padding: 48px 0;
+    text-align: center;
+}
+
+#about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#about img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+#about div {
+    flex: 1;
+    text-align: left;
+}
+
+#about h2 {
+    margin-bottom: 16px;
+}
+
+#about p {
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+#produtos {
+    margin-bottom: 20px;
+}
+
+.lista-sapatos {
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista-sapatos li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+.lista-sapatos li img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lista-sapatos li button {
+    margin-top: 8px;
+}
+
+.lista-sapatos li h3 {
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color:#000;
+    color: #e8e5e5f8;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px; 
+}
+
+#contato {
+    text-align: left;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea,
+.form-campo label {
+    width:  100%; 
+    display: block;
+    padding: 4px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 380px;
+    margin: 0 auto;
+    margin-left: 0;
+}
+
+form button {
+    max-width: 100%;
+}
+
+
+ 
+footer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer > .container {
+    align-items: center;
+    padding-bottom: 16px;
+    display: flex;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    .lista-sapatos {
+        flex-wrap: wrap;
+    }
+    
+    .lista-sapatos li {
+        width: calc(25% - 16px);
+        box-sizing: border-box;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .lista-sapatos li:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (min-width:641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .lista-sapatos li {
+        width: calc(50% - 16px);
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .lista-sapatos li:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .lista-sapatos li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
